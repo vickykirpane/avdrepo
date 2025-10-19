@@ -1,1 +1,21 @@
+name: Run stramlit job
 
+on: 
+
+    push:
+
+        branches:
+        -main 
+
+jobs:
+    streamlit-job:
+        runs-on: ubuntu-latest
+        
+        steps:
+         -name: Checkout Code
+         uses: actions/checkout@v2
+
+         -name: Setup Python
+
+
+         run: echo 'welcome..'
